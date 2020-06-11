@@ -3,7 +3,7 @@ import Client from "shopify-buy"
 const SHOPIFY_CHECKOUT_STORAGE_KEY = "shopify_checkout_id"
 
 const client = Client.buildClient({
-  storefrontAccessToken: process.env.SHOP_TOKEN,
+  storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
   domain: `${process.env.SHOP_NAME}.myshopify.com`,
 })
 

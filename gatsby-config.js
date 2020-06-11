@@ -1,11 +1,13 @@
+const path = require("path")
+
 require("dotenv").config({
-  path: `.env`,
+  path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
   siteMetadata: {
-    title: `Only Down`,
-    description: `Get down with Down.`,
+    title: `Sparkling Gifts`,
+    description: `looks great and taste even beter`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -23,14 +25,16 @@ module.exports = {
       // Shopify-related variables in the context setup script.
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ["SHOP_NAME", "SHOP_TOKEN"],
+        whitelist: ["SHOP_NAME", "SHOPIFY_ACCESS_TOKEN"],
       },
     },
     {
       resolve: `gatsby-source-shopify`,
       options: {
         shopName: process.env.SHOP_NAME,
-        accessToken: process.env.SHOP_TOKEN,
+        accessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+        shouldIncludeSourcePlugin: true, // default
+        shouldWrapRootElementWithProvider: true, // default
       },
     },
     "gatsby-plugin-theme-ui",
