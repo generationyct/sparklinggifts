@@ -26,7 +26,7 @@ const Hero = ({ title, description }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        border: "3px solid",
+        border: "1px solid",
         color: "white",
         background: "rgba(0,0,0,0.40)",
         px: 5,
@@ -37,14 +37,14 @@ const Hero = ({ title, description }) => {
     >
       <span
         sx={{
-          fontSize: 40,
+          fontSize: 38,
           fontWeight: "800",
           textTransform: "uppercase",
         }}
       >
         {title}
       </span>
-      <span sx={{ fontSize: 24, fontWeight: "500", mt: 2 }}>{description}</span>
+      <span sx={{ fontSize: 20, fontWeight: "500", mt: 2 }}>{description}</span>
     </div>
   )
 
