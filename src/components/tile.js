@@ -26,6 +26,7 @@ const Tile = ({ title, slug, price, image }) => {
       sx={{
         maxWidth: 290,
         width: "200%",
+        margin: "auto",
         p: 1,
         display: "flex",
         flexDirection: "column",

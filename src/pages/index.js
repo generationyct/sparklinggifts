@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
     <Layout hasHero>
       <SEO title="Home" />
       <div sx={{ marginTop: 5 }}></div>
-      <Grid gap={2} columns={3}>
+      <Grid gap={2} columns={1}>
         {products.map(product => (
           <Tile
             key={product.handle}
