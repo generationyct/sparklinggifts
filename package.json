@@ -1,9 +1,9 @@
 {
-  "name": "sell-things-fast",
+  "name": "sparkling-gifts",
   "private": true,
-  "description": "A proof-of-concept Gatsby site with a fake Shopify store called Only Down",
+  "description": "The final IH project",
   "version": "0.1.0",
-  "author": "Trevor Harmon <thetrevorharmon@gmail.com>",
+  "author": "Markie Mark <dev@generationyct.nl>",
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@mdx-js/react": "^1.5.1",

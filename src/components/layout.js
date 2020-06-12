@@ -36,11 +36,10 @@ const Layout = ({ children, hasHero }) => {
         <main>{children}</main>
         <footer sx={{ mt: 6 }}>
           <Styled.p>
-            © {new Date().getFullYear()} {title}, Built with
+            © {new Date().getFullYear()} {title}, Built by
             {` `}
-            <Styled.a href="https://www.gatsbyjs.org">Gatsby</Styled.a>
-            {` and `}
-            <Styled.a href="https://www.shopify.ca">Shopify</Styled.a>.
+            <Styled.a href="https://appsi.nl">Appsi</Styled.a> for faster
+            webshops.
           </Styled.p>
         </footer>
       </div>
