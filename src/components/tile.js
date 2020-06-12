@@ -25,7 +25,8 @@ const Tile = ({ title, slug, price, image }) => {
     <Card
       sx={{
         maxWidth: 290,
-        p: 3,
+        width: "200%",
+        p: 1,
         display: "flex",
         flexDirection: "column",
       }}
@@ -33,8 +34,8 @@ const Tile = ({ title, slug, price, image }) => {
       <div sx={{ position: "relative" }}>
         <Img fluid={imageSrc} />
       </div>
-      <Styled.h2 sx={{ mt: 4, mb: 0, fontSize: 3 }}>{title}</Styled.h2>
-      <Text sx={{ fontSize: 4, mb: 2 }}>${price.toFixed(2)}</Text>
+      <Styled.h2 sx={{ mt: 2, mb: 0, fontSize: 2 }}>{title}</Styled.h2>
+      <Text sx={{ fontSize: 2, mb: 2 }}>€{price.toFixed(2)}</Text>
       <Link url={`/product/${slug}`} isButton>
         View
       </Link>
