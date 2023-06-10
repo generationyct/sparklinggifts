@@ -10,7 +10,7 @@
     "@theme-ui/components": "^0.2.49",
     "@theme-ui/presets": "^0.2.44",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.17.11",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-env-variables": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.27",
